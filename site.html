@@ -1,120 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nexus Staff</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css" rel="stylesheet">
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-straight/css/uicons-bold-straight.css'>
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-  
-  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <header class="header">
-    <div class="container">
-      <img src="https://company-logo-frankfurt.robota.ua/cdn-cgi/image/w=150/14052329_20250121214048.jpeg" style="border-radius: 20px;" alt="Nexus Staff" class="logo">
-      <h1 class="title">Nexus Staff</h1> 
-    </div>
-    <div class="menu">
-      <nav class="menu">
-        <a href="#" class="menu-item menu-item-red">Замовити</a>
-      </nav>
-    </div>
-  </header>
+<body class="bg-gray-50">
+  <div class="container mx-auto p-4">
+    <header class="flex justify-between items-center py-4">
+      <h1 class="text-2xl font-semibold text-blue-500">Nexus Staff</h1>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded-md">Зв’язатися</button>
+    </header>
 
-  <div id="box">
-    <p>Ми цінуємо компетентних і відповідальних співробітників з бажанням розвиватися для досягнення максимального індивідуального і корпоративного результатів.</p>
-  </div>
+    <section class="my-8">
+      <h2 class="text-xl font-semibold mb-4">Як ми працюємо</h2>
+      <p class="text-gray-700">
+        Ми забезпечуємо швидкий та ефективний підбір персоналу без зайвих затримок. Пропонуємо експрес-підбір за 24 години, безкоштовну заміну та оплату лише за результат.
+      </p>
+    </section>
 
-  <section class="business-solutions">
-    <h2>Рішення для Вашого бізнесу</h2>
-    <p>Ми пропонуємо Вам Колл Центр під ключ на умовах аутсорсингу</p>
+    <section class="my-8">
+      <h2 class="text-xl font-semibold mb-4">Наші послуги</h2>
+      <ul class="list-disc pl-6 text-gray-700">
+        <li>Експрес-підбір кандидатів за 24 години</li>
+        <li>Безкоштовна заміна працівника</li>
+        <li>Жодних передоплат – сплачуєте лише за результат</li>
+      </ul>
+    </section>
 
-    <div class="feature">
-      <h3>ЕКОНОМІЯ</h3>
-      <p>Ви не сплачуєте за оренду, обладнання, інтернет, телефонію, ЗП персоналу контакт-центру.</p>
-    </div>
+    <section class="my-8">
+      <h2 class="text-xl font-semibold mb-4">Готові почати?</h2>
+      <button class="bg-green-500 text-white px-6 py-3 rounded-md">Зв’язатися з нами</button>
+    </section>
 
-    <div class="feature">
-      <h3>ПІДТРИМКА</h3>
-      <p>Безупинна робота 24 години на добу, 7 днів на тиждень, 365 днів на рік.</p>
-    </div>
-
-    <div class="feature">
-      <h3>ЯКІСТЬ</h3>
-      <p>Призначений менеджер та окрема команда під Ваш проект, регулярна статистична та аналітична звітність.</p>
-    </div>
-
-    <div class="feature">
-      <h3>ЛІДЕРСТВО</h3>
-      <p>Згідно публічним дослідженням Ваш Колл Центр є лідером ринку України.</p>
-    </div>
-
-    <div class="feature">
-      <h3>БАГАТОМОВНІСТЬ</h3>
-      <p>Обслуговування абонентів на 10-ти мовах світу.</p>
-    </div>
-
-    <div class="feature">
-      <h3>ПРИБУТОК</h3>
-      <p>Ми збільшуємо Ваш дохід, підвищуючи лояльність Ваших клієнтів. Рівень задоволеності наших Замовників - 95%.</p>
-    </div>
-  </section>
-  <section class="hr-department">
-    <h2>Наш потужний HR-департамент</h2>
-    <p>Ми розуміємо, що якісний персонал – це ключ до успіху. Наш HR-департамент забезпечує:</p>
-  
-    <div class="feature">
-      <h3>Професійний підбір кадрів</h3>
-      <p>Ми залучаємо лише найкращих фахівців для забезпечення ефективної роботи.</p>
-    </div>
-  
-    <div class="feature">
-      <h3>Навчання та розвиток</h3>
-      <p>Регулярні тренінги та підвищення кваліфікації для наших співробітників.</p>
-    </div>
-  
-    <div class="feature">
-      <h3>Мотиваційні програми</h3>
-      <p>Система бонусів і кар'єрного зростання для залучення та утримання талановитих кадрів.</p>
-    </div>
-  
-    <div class="feature">
-      <h3>Контроль ефективності</h3>
-      <p>Аналітика продуктивності та зворотний зв’язок для покращення роботи команди.</p>
-    </div>
-  </section>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-section">
-        <h3>Про нас</h3>
-        <p>Ми - провідний аутсорсинговий контакт-центр, що надає якісні послуги бізнесу.</p>
-      </div>
-  
-      <div class="footer-section">
-        <h3>Наші переваги</h3>
-        <ul>
-          <li>Цілодобова підтримка 24/7/365</li>
-          <li>Обслуговування на 10-ти мовах</li>
-          <li>Підвищення прибутку та лояльності клієнтів</li>
-          <li>Призначений менеджер для кожного проекту</li>
-          <li>Потужний HR-департамент</li>
-        </ul>
-      </div>
-  
-      <div class="footer-section">
-        <h3>Контакти</h3>
-        <p>Телефон: +380505384631</p>
-        <p>Адреса: м. Київ, вул. Сагайдачного, 15</p>
-      </div>
-    </div>
-    <div class="footer-bottom">
+    <footer class="text-center py-8 text-gray-600">
       <p>&copy; 2025 Nexus Staff. Усі права захищені.</p>
-    </div>
-  </footer>
-  
-  <script src="main.js"></script> 
+    </footer>
+  </div>
 </body>
 </html>
