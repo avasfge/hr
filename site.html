@@ -3,40 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nexus Staff</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>RecruPulse</title>
+  <!-- Подключаем Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50">
-  <div class="container mx-auto p-4">
-    <header class="flex justify-between items-center py-4">
-      <h1 class="text-2xl font-semibold text-blue-500">Nexus Staff</h1>
-      <button class="bg-blue-500 text-white px-4 py-2 rounded-md">Зв’язатися</button>
-    </header>
+<body>
 
-    <section class="my-8">
-      <h2 class="text-xl font-semibold mb-4">Як ми працюємо</h2>
-      <p class="text-gray-700">
-        Ми забезпечуємо швидкий та ефективний підбір персоналу без зайвих затримок. Пропонуємо експрес-підбір за 24 години, безкоштовну заміну та оплату лише за результат.
-      </p>
-    </section>
+  <!-- Фиксированный хедер -->
+  <header class="header">
+    <div class="logo-container">
 
-    <section class="my-8">
-      <h2 class="text-xl font-semibold mb-4">Наші послуги</h2>
-      <ul class="list-disc pl-6 text-gray-700">
-        <li>Експрес-підбір кандидатів за 24 години</li>
-        <li>Безкоштовна заміна працівника</li>
-        <li>Жодних передоплат – сплачуєте лише за результат</li>
-      </ul>
-    </section>
+ 
+      <h1 class="logo">RecruPulse</h1>
+    </div>
+    <nav class="nav">
+      <button class="btn" onclick="scrollToSection('contact')">Зв’язатися</button>
+    </nav>
+  </header>
 
-    <section class="my-8">
-      <h2 class="text-xl font-semibold mb-4">Готові почати?</h2>
-      <button class="bg-green-500 text-white px-6 py-3 rounded-md">Зв’язатися з нами</button>
-    </section>
+  <!-- Герой-секция с градиентным фоном -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Швидкий підбір персоналу</h2>
+      <p>Жодних передоплат – лише за результат</p>
+      <button class="btn" onclick="scrollToSection('about')">Дізнатися більше</button>
+    </div>
+  </section>
 
-    <footer class="text-center py-8 text-gray-600">
-      <p>&copy; 2025 Nexus Staff. Усі права захищені.</p>
-    </footer>
-  </div>
+  <!-- Секція "Про нас" -->
+  <section id="about" class="section about">
+    <h2>Про нас</h2>
+    <p>Ми допомагаємо бізнесу знаходити ідеальних кандидатів швидко та без ризиків.</p>
+  </section>
+
+  <!-- Секція "Наші переваги" -->
+  <section class="section advantages">
+    <h2>Наші переваги</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="card-icon">🚀</div>
+        <h3>Швидкість</h3>
+        <p>Підбір за 24 години</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">✅</div>
+        <h3>Гарантія</h3>
+        <p>Безкоштовна заміна</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">💰</div>
+        <h3>Прозорість</h3>
+        <p>Жодних передоплат</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Секція "Контакти" -->
+  <section id="contact" class="section contact">
+    <h2>Готові розпочати?</h2>
+    <button class="btn">Написати нам</button>
+  </section>
+
+  <!-- Футер -->
+  <footer class="footer">
+    &copy; 2025 RecruPulse
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
